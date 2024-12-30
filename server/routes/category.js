@@ -10,6 +10,7 @@ router.post(
   //   checkRole.checkRole,
   (req, res) => {
     let category = req.body;
+    console.log(category);
     query = "INSERT INTO category(name) VALUES(?)";
     connection.query(query, [category.name], (err, results) => {
       if (!err) {

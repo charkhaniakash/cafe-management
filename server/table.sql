@@ -23,5 +23,6 @@ CREATE TABLE product(
     categoryId integer NOT NULL,
     description varchar(255) NOT NULL,
     price integer,
+    status varchar(20)
     primary key(id)
 );
